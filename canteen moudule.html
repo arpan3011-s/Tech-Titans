@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canteen Module</title>
+  <link rel="stylesheet" href="canteen moudule.css" />
+</head>
+<body>
+  <header>
+    <h1>Institute Canteen Portal</h1>
+  </header>
+
+  <section id="menu-section">
+    <h2>Weekly Menu</h2>
+    <div id="menu-list"></div>
+    <h3>Total Calories: <span id="totalCalories">0</span> kcal</h3>
+    <button onclick="placeOrder()">Place Order</button>
+  </section>
+
+  <section id="feedback-section">
+    <h2>Meal Feedback</h2>
+    <form id="feedbackForm">
+      <input type="text" placeholder="Your Name" required />
+      <textarea placeholder="How was your meal?" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <div id="feedbackMsg"></div>
+  </section>
+
+  <section id="waste-section">
+    <h2>Daily Waste Meter</h2>
+    <p>Food Saved Today: <strong id="savedFood">0</strong> kg</p>
+    <p>Food Wasted Today: <strong id="wastedFood">0</strong> kg</p>
+  </section>
+
+  <script src="canteen moudule.js"></script>
+</body>
+</html>

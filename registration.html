@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="registration.css" />
+</head>
+<body>
+  <section class="registration-form">
+    <div class="container">
+      <h2>Student Registration</h2>
+      <form id="regForm">
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password *</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required />
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course *</label>
+          <select id="course" name="course" required>
+            <option value="">-- Choose --</option>
+            <option value="btech">B.Tech</option>
+            <option value="bsc">B.Sc</option>
+            <option value="ba">B.A</option>
+            <option value="mba">MBA</option>
+          </select>
+        </div>
+
+        <button type="submit">Register</button>
+        <p id="successMsg" class="success-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="registrtion.js"></script>
+</body>
+</html>

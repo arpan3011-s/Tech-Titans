@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Application Form</title>
+  <link rel="stylesheet" href="application.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Admission Application Form</h2>
+    <form id="admissionForm">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender *</label>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address *</label>
+        <textarea id="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="course">Course Applied For *</label>
+        <select id="course" required>
+          <option value="">Select Course</option>
+          <option value="B.Sc">B.Sc</option>
+          <option value="B.A">B.A</option>
+          <option value="B.Com">B.Com</option>
+          <option value="M.Sc">M.Sc</option>
+          <option value="M.A">M.A</option>
+        </select>
+      </div>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="application.js"></script>
+</body>
+</html>
