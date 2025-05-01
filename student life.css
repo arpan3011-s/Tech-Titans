@@ -1,0 +1,62 @@
+.campus-life-tabs {
+  padding: 4em 1em;
+  background-color: #f9fbfe;
+  text-align: center;
+}
+
+.campus-life-tabs h2 {
+  font-size: 2.5em;
+  color: #003366;
+  margin-bottom: 0.3em;
+}
+
+.campus-life-tabs .subtitle {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 2em;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.tab-btn {
+  padding: 0.6em 1.2em;
+  border: 1px solid #003366;
+  background-color: white;
+  color: #003366;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tab-content h3 {
+  color: #003366;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.tab-content p {
+  font-size: 1em;
+  color: #333;
+}
+
+.tab-content.active {
+  display: block;
+}

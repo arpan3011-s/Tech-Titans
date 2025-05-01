@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hostel Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="hostel.css" />
+</head>
+<body>
+  <header>
+    <h1>Hostel Management Portal</h1>
+  </header>
+
+  <section id="room-allocation">
+    <h2>Room Allocation (Click a room to select)</h2>
+    <div class="floor-plan" id="floorPlan"></div>
+    <p>Selected Room: <span id="selectedRoom">None</span></p>
+  </section>
+
+  <section id="roommate-matching">
+    <h2>Roommate Matching Form</h2>
+    <form id="matchForm">
+      <input type="text" placeholder="Name" required />
+      <select required>
+        <option value="">Preferred Language</option>
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Other</option>
+      </select>
+      <input type="text" placeholder="Your Interests (comma-separated)" required />
+      <input type="text" placeholder="Your Course" required />
+      <button type="submit">Find Match</button>
+    </form>
+    <div id="matchResult"></div>
+  </section>
+
+  <section id="maintenance">
+    <h2>Maintenance Request</h2>
+    <form id="maintenanceForm">
+      <input type="text" placeholder="Room No." required />
+      <textarea placeholder="Issue Description" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="maintenanceList"></div>
+  </section>
+
+  <section id="guest-visitor">
+    <h2>Guest Visitor Registration</h2>
+    <form id="visitorForm">
+      <input type="text" placeholder="Visitor Name" required />
+      <input type="text" placeholder="Student Name" required />
+      <input type="date" required />
+      <button type="submit">Register</button>
+    </form>
+    <div id="visitorList"></div>
+  </section>
+
+  <section id="digital-id">
+    <h2>Your Digital Hostel ID</h2>
+    <div class="id-card">
+      <p>Name: <strong>John Doe</strong></p>
+      <p>Room: <strong>101</strong></p>
+      <p>Hostel: <strong>A-Block</strong></p>
+      <img src="https://via.placeholder.com/80" alt="User photo" />
+      <p>ID: <strong>HSTL2025-001</strong></p>
+    </div>
+  </section>
+
+  <script src="hostel.js"></script>
+</body>
+</html>

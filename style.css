@@ -1,0 +1,121 @@
+body{
+	background: url('https://content3.jdmagicbox.com/comp/kolkata/x5/033pxx33.xx33.170401161158.e2x5/catalogue/brainware-university-barasat-kolkata-colleges-for-mlt-w62pr07p9e.jpg')fixed;
+        background-size: cover;
+    }
+body{
+     font-size:14px;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  header {
+    color: #0c0c0c;
+    padding: 1em 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #navToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: none;
+  }
+  
+  .hero {
+    background: #cce5ff;
+    padding: 3em 0;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1em;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+  }
+  
+  /* Responsive Nav */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+    }
+  
+    nav ul.show {
+      display: block;
+    }
+  
+    #navToggle {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Seat Booking</title>
+  <link rel="stylesheet" href="library.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Library Seat Booking</h1>
+
+    <label for="booking-date">Select Booking Date:</label>
+    <input type="date" id="booking-date" required />
+
+    <div class="seats">
+      <h2>Select a Seat</h2>
+      <div id="seat-container"></div>
+    </div>
+
+    <div class="payment">
+      <h2>Payment</h2>
+      <label>
+        <input type="radio" name="payment" value="upi" checked /> UPI
+      </label>
+      <label>
+        <input type="radio" name="payment" value="card" /> Debit/Credit Card
+      </label>
+    </div>
+
+    <button id="book-btn">Book Now</button>
+
+    <p id="confirmation" class="hidden"></p>
+  </div>
+
+  <script src="library.js"></script>
+</body>
+</html>
